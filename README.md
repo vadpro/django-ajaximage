@@ -1,6 +1,7 @@
 django-ajaximage
 ===============
 
+
 Ajax image uploads.
 -------------------------------------
 Upload images via ajax. Images are optionally resized.
