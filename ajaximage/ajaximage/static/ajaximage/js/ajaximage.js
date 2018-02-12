@@ -52,7 +52,12 @@
         el.className = 'ajaximage form-active'
         el.querySelector('.file-path').value = ''
         el.querySelector('.file-input').value = ''
-        alert(msg)
+
+        if (popup != undefined) {
+            return popup.alert(msg);
+        } else {
+            return alert(msg);
+        }
     }
 
     var update = function(el, data) {
@@ -92,7 +97,12 @@
             regex  = /jpg|jpeg|png|gif/i
 
         if( ! regex.test(file.type)){
-            return alert('Incorrect image format. Allowed (jpg, gif, png).')
+            var msg = 'Incorrect image format. Allowed (jpg, gif, png).';
+            if(popup != undefined) {
+                return popup.alert(msg);
+            } else {
+                return alert(msg);
+            }
         }
 
         el.className = 'ajaximage progress-active'
