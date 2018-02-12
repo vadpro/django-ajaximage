@@ -3,10 +3,6 @@ django-ajaximage
 
 Ajax image uploads.
 -------------------------------------
-
-[![PyPi Version](https://pypip.in/v/django-ajaximage/badge.png)](https://crate.io/packages/django-ajaximage)
-[![PyPi Downloads](https://pypip.in/d/django-ajaximage/badge.png)](https://crate.io/packages/django-ajaximage)
-
 Upload images via ajax. Images are optionally resized.
 
 ![screenshot](https://raw.githubusercontent.com/bradleyg/django-ajaximage/master/screenshot.png)
@@ -21,7 +17,7 @@ For older browser support use version 0.1.18.
 
 Install with Pip:
 
-```pip install django-ajaximage```
+```pip install git+git://github.com/attract/django-ajaximage.git```
 
 ## Django Setup
 
@@ -35,7 +31,6 @@ INSTALLED_APPS = [
 ]
 
 # Settings
-AJAXIMAGE_AUTH_TEST = lambda u: True
 ```
 
 ### urls.py

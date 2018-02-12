@@ -12,12 +12,10 @@ from .forms import FileForm
 
 
 UPLOAD_PATH = getattr(settings, 'AJAXIMAGE_DIR', 'ajaximage/')
-AUTH_TEST = getattr(settings, 'AJAXIMAGE_AUTH_TEST', lambda u: u.is_staff)
 FILENAME_NORMALIZER = getattr(settings, 'AJAXIMAGE_FILENAME_NORMALIZER', slugify)
 
 
 @require_POST
-@user_passes_test(AUTH_TEST)
 def ajaximage(request, upload_to=None, max_width=None, max_height=None, crop=None, form_class=FileForm):
     form = form_class(request.POST, request.FILES)
     if form.is_valid():

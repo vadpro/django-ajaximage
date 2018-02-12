@@ -12,7 +12,6 @@ from .forms import FileForm
 
 
 UPLOAD_PATH = getattr(settings, 'AJAXIMAGE_DIR', 'ajaximage/')
-AUTH_TEST = getattr(settings, 'AJAXIMAGE_AUTH_TEST', lambda u: u.is_staff)
 FILENAME_NORMALIZER = getattr(settings, 'AJAXIMAGE_FILENAME_NORMALIZER', slugify)
 
 
