@@ -12,7 +12,7 @@ Upload images via ajax. Images are optionally resized.
 ![screenshot](https://raw.githubusercontent.com/bradleyg/django-ajaximage/master/screenshot.png)
 
 ## Support
-Python 2/3
+Python 3.5 Django 1.11
 Chrome / Safari / Firefox / IE10+
 
 For older browser support use version 0.1.18.
