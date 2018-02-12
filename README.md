@@ -4,6 +4,7 @@ django-ajaximage
 Ajax image uploads.
 -------------------------------------
 Upload images via ajax. Images are optionally resized.
+Can use in django admin side (with django-suit compatible)
 
 ![screenshot](https://raw.githubusercontent.com/bradleyg/django-ajaximage/master/screenshot.png)
 
