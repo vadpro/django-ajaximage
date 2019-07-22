@@ -1,7 +1,11 @@
 import os
 from django.forms import widgets
 from django.utils.safestring import mark_safe
-from django.core.urlresolvers import reverse
+try:
+    from django.core.urlresolvers import reverse
+except ImportError:
+    # For Django > 2.0
+    from django.urls import reverse
 from django.core.files.storage import default_storage
 
 
